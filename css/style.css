@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body,
+#bg {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    position: relative;
+    min-width: 1500px;
+}
+
+#overlay {
+    background-color: #CDBBB2;
+    background-image: url(../img/p.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    opacity: 40%;
+}
+
+#contents_wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    border: 100px solid #050505;
+    box-sizing: border-box;
+}
+
+#clock {
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    z-index: 30;
+    font-family: 'LAB디지털';
+}
+
+#lyrics {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#lyrics span {
+    display: inline-block;
+    width: 1000px;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: 'GowunBatang-Regular';
+}
+
+#lyrics .title {
+    color: #CDBBB2;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+#login-form, #greeting, #todo-form, #todo-list, #weather {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 30;
+}
+
+#name, #greeting, #todo-form > input {
+    font-size: 50px;
+    padding: 10px 50px;
+    background-color: rgb(5, 5, 5, 0.2);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    text-align: center;
+    font-family: 'GowunBatang-Regular';
+}
+
+#name::placeholder, #todo-form > input::placeholder {
+    color: white;
+    text-align: center;
+    font-family: 'GowunBatang-Regular';
+}
+
+#name:focus, #todo-form > input:focus {
+    outline:none;
+    text-align: center;
+}
+
+#todo-form {
+    top: 40%;
+}
+
+
+#todo-form > input {
+    font-size: 30px;
+    padding: 5px;
+}
+
+#todo-list {
+    top: 50%;
+    margin-left: 20px;
+}
+
+#todo-list li {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'GowunBatang-Regular';
+}
+
+button {
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+
+#weather {
+    top: 10%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'GowunBatang-Regular';
+}
